@@ -19,14 +19,17 @@ SER System on Jetson Nano
 <br>
 
 ## 전체 구조 개요
-<img width="800" height="241" alt="image" src="https://github.com/user-attachments/assets/1a731a62-79a7-4370-97aa-766437e11825" />
+
+<img width="800" height="241" alt="image" src="https://github.com/user-attachments/assets/889cc20f-1366-47a3-bae5-2e8be6c16e3c" />
 
 <br><br>
 
 ## 입력 데이터 형식 및 모델 구조
 
 ### 1. 입력 데이터 형식
-<img width="1000" height="326" alt="image" src="https://github.com/user-attachments/assets/54b6eaf5-0618-4012-b736-ae1936dec14c" />
+
+<img width="1000" height="326" alt="image" src="https://github.com/user-attachments/assets/2d840310-2abb-4974-aac7-a2fdbf957df7" />
+
 
 | Category        | Parameters                                                                 |
 |-----------------|----------------------------------------------------------------------------|
@@ -46,7 +49,8 @@ SER System on Jetson Nano
 
 **Head**: Custom Head
 
-<img width="600" height="346" alt="image" src="https://github.com/user-attachments/assets/6d1e9285-f99a-42b9-90cf-fbffebfcb7d5" />
+<img width="600" height="346" alt="image" src="https://github.com/user-attachments/assets/b86772fa-a3f2-41ea-9746-66f7437ade75" />
+
 
 <br><br>
 
