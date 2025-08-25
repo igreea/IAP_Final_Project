@@ -4,7 +4,7 @@ from tqdm import tqdm
 import numpy as np
 import torchaudio
 
-# power 스펙트로그램(mel_tf 출력) → dB
+# power 스펙트로그램(mel_tf 출력) -> dB
 db_tf = torchaudio.transforms.AmplitudeToDB( # 엡실론(1e-10) 내부 보정
     stype='power',   # mel_tf(power=2.0) 입력일 때 
     top_db=80.0      # dB 상한(옵션)
@@ -23,16 +23,13 @@ for data_name in tqdm(sorted_files):
     data = torch.load(data_path_full)
     
     data_1, data_2, data_3 = data # mel, pitch, rms
-    db_data_1 = db_tf(data_1)  # mel_tf(power=2.0) → dB
+    db_data_1 = db_tf(data_1)  # mel_tf(power=2.0) -> dB
     db_data_1 = db_data_1 - db_data_1.max()  # dB 상한을 0으로 맞춤
     norm_data_1 = (db_data_1 + 80.0) / 80.0  # [0, 1]로 정규화
     invalid_mask = (norm_data_1 < 0.0) | (norm_data_1 > 1.0)
     if invalid_mask.any():
         print("Out-of-range values:", norm_data_1[invalid_mask], db_data_1.max(), db_data_1.min())
         raise ValueError("Normalization failed for mel data")
-
-
-
 
     log_data_2 = torch.log10(data_2)  # pitch log
 
@@ -53,4 +50,5 @@ for data_name in tqdm(sorted_files):
                         data_norm[2].min().item()))
 
 print("Max value:", max(list_of_max))
+
 print("Min value:", min(list_of_min))
