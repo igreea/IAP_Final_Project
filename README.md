@@ -89,7 +89,9 @@ SER System on Jetson Nano
 
 ## Docker Image 사용 방법
 
-이미지 파일 링크(구글 드라이브): https://drive.google.com/file/d/1FsbHj9kZLRWaHiiHyT2MLtQ0l1Q8g5F-/view?usp=drive_link 
+이미지 파일 링크(구글 드라이브, 권한 요청 필요): https://drive.google.com/file/d/1FsbHj9kZLRWaHiiHyT2MLtQ0l1Q8g5F-/view?usp=drive_link 
+
+[모델 엔진 및 가중치 링크(구글 드라이브, 권한 필요 없음): https://drive.google.com/drive/folders/1CWtzD_y_Sk-S_BiId35V9HwzZ4ZFpcOH]
 
 해당 프로젝트는 실행을 위하여 USB 마이크 연결을 필요로 합니다.
 
